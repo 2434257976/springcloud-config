@@ -15,7 +15,7 @@ spring:
   application:
     name: springcloud-config-dept
  datasource:
-    type: com.alibaba.druid.pool.DruidDataSource
+    type: com.alibaba.druid.pool.DruidDataSource #数据库
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/db01?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
     username: root
@@ -32,7 +32,6 @@ info:
   app.name: yang-springcloud
   company.name: yangchenggang
 
-
 ---
 server:
   port: 8081
@@ -47,9 +46,9 @@ spring:
   application:
     name: springcloud-config-dept
   datasource:
-    type: com.alibaba.druid.pool.DruidDataSource
+    type: com.alibaba.druid.pool.DruidDataSource #数据库
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/db02?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/db01?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
     username: root
     password: 111
 
@@ -63,3 +62,4 @@ eureka:
 info:
   app.name: yang-springcloud
   company.name: yangchenggang
+
