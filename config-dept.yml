@@ -30,8 +30,9 @@ eureka:
     instance-id: springcloud-provider-dept-8081
 
 info:
-  app.name: lzh-springcloud
-  company.name: com.lzh
+  app.name: yang-springcloud
+  company.name: yangchenggang
+
 
 ---
 server:
@@ -46,10 +47,10 @@ spring:
   profiles: test
   application:
     name: springcloud-config-dept
-   datasource:
+  datasource:
     type: com.alibaba.druid.pool.DruidDataSource #Êý¾Ý¿â
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/db02?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/db01?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
 
     username: root
     password: 111
@@ -62,6 +63,5 @@ eureka:
     instance-id: springcloud-provider-dept-8081
 
 info:
-  app.name: lzh-springcloud
-  company.name: com.lzh
-
+  app.name: yang-springcloud
+  company.name: yangchenggang
